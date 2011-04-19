@@ -1,6 +1,6 @@
 /*
 ---
-description:     Sowar: a Javascript class for Mootools framework that creates an images rotator
+description:     Sowar, a Javascript class for Mootools framework that creates an images rotator
 
 authors:
   - Dirar Abu Kteish (http://www.developer.ps)
@@ -15,8 +15,6 @@ provides:
   - Sowar
 ...
 */
-// 
-// Sowar 1, Copyright (c) 2011 Dirar Abu Kteish <dirar@zanstudio.com>, MIT Style License
 var Sowar = new Class({
     Implements: [Events, Options],
     initialize: function(element, options) {
@@ -29,6 +27,7 @@ var Sowar = new Class({
             , transition: 'bounce:out'
             , transitionDelay: 'normal'
             , direction: 'left' //right
+            , elementsWidth: 710
         }, options);
         this.mainConatiner = (typeOf(element) == 'element') ? element : $(element);
         this.wrapperElement = $(document.body).getElement(this.options.wrapperSelector);
@@ -45,7 +44,7 @@ var Sowar = new Class({
     constructRotater: function(){
         //console.log($('sowar-container'));
         $$(this.options.elementsSelector).each(function(el, i){
-            el.setStyle(this.options.direction, el.getSize().x * i);
+            el.setStyle(this.options.direction, this.options.elementsWidth * i);
             var paging = new Element('div', {'class' : this.options.pagingElementsClass, 'id' : ('soraElement' + i)});
             if(i == 0){paging.addClass('selected');}
             paging.inject($(document.body).getElement(this.options.pagingContainerSelector), 'top');
@@ -66,7 +65,7 @@ var Sowar = new Class({
     , selectElement: function(elIndex){
         var lastElement = $(document.body).getElement(this.options.pagingContainerSelector).getElement('.selected');
         if(lastElement){lastElement.removeClass('selected');}
-        this.wrapperElement.tween(this.options.direction, $$(this.options.elementsSelector)[elIndex].getSize().x * (-1 * elIndex));
+        this.wrapperElement.tween(this.options.direction, this.options.elementsWidth * (-1 * elIndex));
         $('soraElement' + elIndex).addClass('selected');        
     }
 }); 
