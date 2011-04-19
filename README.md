@@ -38,6 +38,7 @@ Options:
     <li>transition, default: 'bounce:out'</li>
     <li>transitionDelay, default: 'normal'</li>
     <li>direction, right or left, default: 'left'</li>
+	<li>elementsWidth, width the elements</li>
 </ul>
 
 Screenshots
@@ -45,5 +46,4 @@ Screenshots
 
 ![Screenshot](http://www.developer.ps/moo/Sowar/images/sc1.jpg)
 ![Screenshot](http://www.developer.ps/moo/Sowar/images/sc2.jpg)
-![Screenshot](http://www.developer.ps/moo/Sowar/images/sc3.jpg)
 
