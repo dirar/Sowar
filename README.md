@@ -22,8 +22,7 @@ How to use
 		Create the rotator element		
 	</li>
 	<li>
-		#JS
-        window.addEvent('domready', function(){
+		window.addEvent('domready', function(){
                 var sora1 = new Sowar('mainElementConatiner'[,options]);
         });
 	</li>
@@ -38,6 +37,7 @@ Options:
     <li>transition, default: 'bounce:out'</li>
     <li>transitionDelay, default: 'normal'</li>
     <li>direction, right or left, default: 'left'</li>
+	<li>elementsWidth, width the elements</li>
 </ul>
 
 Screenshots
@@ -45,5 +45,4 @@ Screenshots
 
 ![Screenshot](http://www.developer.ps/moo/Sowar/images/sc1.jpg)
 ![Screenshot](http://www.developer.ps/moo/Sowar/images/sc2.jpg)
-![Screenshot](http://www.developer.ps/moo/Sowar/images/sc3.jpg)
 
