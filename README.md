@@ -16,7 +16,7 @@ How to use
 		Be sure to have the main conatiner position set as absoulte or relative and overflow to hidden and Wrapper position to absoulte
 	</li>
 	<li>
-		Include mootols-core file and Sowar.js & css file
+		Include mootols-core file and Sowar.js and css file
 	</li>
 	<li>
 		Create the rotator element		
