@@ -2,7 +2,7 @@ name:  Sowar
 author:  Dirar Abu Kteish (dirar@zanstudio.com)
 current:  1
 category:  Widgets
-sources: ["Sowar.js"]
+sources: ["Source/Sowar.js"]
 tags:  [image,carousel,animation,slideshow]
 demo:  http://www.developer.ps/moo/Sowar
 docs:  http://www.developer.ps/moo/Sowar
